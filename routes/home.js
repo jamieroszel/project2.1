@@ -21,10 +21,17 @@ router.get("/about", (req, res) => {
     res.render("about")
 })
 
+// Create Router
+router.get("/podcasts/create", (req, res) => {
+    res.render("create")
+})
+
 // 404 Router
 router.use((req, res) => {
     res.status(404).render('404')
 })
+
+
 
 
 
