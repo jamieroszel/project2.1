@@ -23,8 +23,20 @@ router.get("/about", (req, res) => {
 
 // Create Router
 router.get("/podcasts/create", (req, res) => {
-    res.render("create")
+    res.render('create');
 })
+
+// Environment Router
+router.get("/enviro", (req, res) => {
+    res.render('enviro');
+})
+
+// Timber Wars Router
+router.get("/timberwars", (req, res) => {
+    res.render('timberwars');
+})
+
+
 
 // 404 Router
 router.use((req, res) => {
